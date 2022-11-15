@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Japanese Crossword</title>
+    <meta name="author" content="Tatiana Gordeeva" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <div class="theme__changer">
+      <button class="theme__icon"><i class="bi bi-palette"></i></button>
+      <div class="theme__btns">
+        <input id="theme__blue" type="radio" class="theme__btn" name="theme" />
+        <label for="theme__blue" class="theme__name active__theme">Blue</label>
+        <input id="theme__green" type="radio" class="theme__btn" name="theme" />
+        <label for="theme__green" class="theme__name">Green</label>
+        <input
+          id="theme__yellow"
+          type="radio"
+          class="theme__btn"
+          name="theme"
+        />
+        <label for="theme__yellow" class="theme__name">Yellow</label>
+      </div>
+    </div>
+
+    <h1>Nonogram</h1>
+
+    <div class="rules__container">
+      <button class="rules__btn"><i class="bi bi-question-lg"></i></button>
+      <p class="rules__game">
+        Each number on the lines outside the grid represents a block of squares
+        to be blacked out in that row or column.<br />
+        Multiple numbers indicate that there is at least one white square in
+        between.
+      </p>
+    </div>
+
+    <div class="game">
+      <div class="field__container">
+        <div class="empty__block">
+          <h2 class="level">Level <span class="level__num">1</span></h2>
+          <div class="action__btns">
+            <button class="restart">Restart</button>
+            <button class="result">Check result</button>
+          </div>
+          <button class="next__level" disabled>Next Level</button>
+          <p class="comment">It's a <span class="pic">Sand clock</span></p>
+        </div>
+        <div class="numbers__up">
+          <span class="number number__up"></span
+          ><span class="number number__up"></span
+          ><span class="number number__up"></span
+          ><span class="number number__up"></span
+          ><span class="number number__up"></span>
+        </div>
+        <div class="numbers__left">
+          <span class="number number__left">
+            <!-- <span class="block__left">1</span>
+            <span class="block__left">3</span> --> </span
+          ><span class="number number__left"></span
+          ><span class="number number__left"></span
+          ><span class="number number__left"></span
+          ><span class="number number__left"></span>
+        </div>
+        <div class="cells">
+          <button class="cell"></button><button class="cell"></button
+          ><button class="cell"></button><button class="cell"></button
+          ><button class="cell"></button><button class="cell"></button
+          ><button class="cell"></button><button class="cell"></button
+          ><button class="cell"></button><button class="cell"></button
+          ><button class="cell"></button><button class="cell"></button
+          ><button class="cell"></button><button class="cell"></button
+          ><button class="cell"></button><button class="cell"></button
+          ><button class="cell"></button><button class="cell"></button
+          ><button class="cell"></button><button class="cell"></button
+          ><button class="cell"></button><button class="cell"></button
+          ><button class="cell"></button><button class="cell"></button
+          ><button class="cell"></button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
